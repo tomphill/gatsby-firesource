@@ -1,6 +1,6 @@
 {
   "name": "gatsby-firesource",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Gatsby source plugin for building websites using Firestore as a data source.",
   "main": "gatsby-node.js",
   "repository": "github:tomphill/gatsby-firesource",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "firebase-admin": "^8.5.0",
-    "gatsby-cli": "^1.1.58"
+    "gatsby-cli": "^2.7.49"
   },
   "files": [
     "gatsby-node.js",

@@ -1,6 +1,6 @@
 # gatsby-firesource [![npm version](https://badge.fury.io/js/gatsby-firesource.svg)](https://badge.fury.io/js/gatsby-firesource)
 
-Gatsby source plugin for building websites using the Firestore as a data source.
+Gatsby source plugin for building websites using Firestore as a data source.
 
 # Usage
 1. Get a private key for your Firebase project.
