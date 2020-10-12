@@ -14,6 +14,8 @@ module.exports = {
     {
       resolve: 'gatsby-firesource',
       options: {
+        emulator: false,
+        host: 'localhost:8080',
         credential: require("./firebase.json"),
         types: [
           {
@@ -62,6 +64,8 @@ module.exports = {
 # Configurations
 Key|Description
 ---|---
+emulator|Optional boolean param for connect your app to the Cloud Firestore Emulator.  Default value `false`
+host|Optional string param custom host for connect your app to the Cloud Firestore Emulator. Default value `localhost:8080`
 credential|Require your private key here
 types| Array of types, which require the following 3 keys
 type|The type of the collection, which will be used in GraphQL queries. Eg, when `type = Book`, the GraphQL types are named `book` and `allBook`
