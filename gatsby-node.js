@@ -10,7 +10,7 @@ const getDigest = id =>
 
 exports.sourceNodes = async (
   { actions },
-  { types, credential }
+  { emulator = false, host, types, credential }
 ) => {
 
   try{
@@ -24,6 +24,13 @@ exports.sourceNodes = async (
   }
 
   const db = firebase.firestore();
+
+  if (emulator) {
+    db.settings({
+      host: host || 'localhost:8080',
+      ssl: false
+    });
+  }
 
   const { createNode } = actions;
 
