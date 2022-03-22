@@ -6,9 +6,15 @@
   "repository": "github:tomphill/gatsby-firesource",
   "author": "Tom Phillips <info@tomphill.co.uk>",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,md}\""
+  },
   "dependencies": {
-    "firebase-admin": "^9.2.0",
-    "gatsby-cli": "^2.12.107"
+    "firebase-admin": "^10.0.2",
+    "gatsby-cli": "^4.10.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.0"
   },
   "files": [
     "gatsby-node.js",
